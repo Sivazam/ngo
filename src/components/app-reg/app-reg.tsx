@@ -116,9 +116,22 @@ export class AppReg {
                                             <div class="line-fx"></div>
                                         </div>
 
+                                        
+
                                         <div class="field-set">
                                             <input type='text' name='phone' id='phone' class="form-control" placeholder="Your Phone"/>
                                             <div class="line-fx"></div>
+
+                                            <div class="field-set">
+                                            <input type='text' name='place' id='place' class="form-control" placeholder="Your Place"/>
+                                            <div class="line-fx"></div>
+                                        </div>
+
+                                        <div class="field-set">
+                                            <input type='text' name='intrest' id='intrest' class="form-control" placeholder="Your Area of Intrest"/>
+                                            <div class="line-fx"></div>
+                                        </div>
+
                                         </div>
                                     </div>
 
