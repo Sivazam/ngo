@@ -22,6 +22,8 @@ export namespace Components {
     interface AppProfile {
         "match": MatchResults;
     }
+    interface AppReg {
+    }
     interface AppRoot {
     }
     interface AppServices {
@@ -70,6 +72,12 @@ declare global {
         prototype: HTMLAppProfileElement;
         new (): HTMLAppProfileElement;
     };
+    interface HTMLAppRegElement extends Components.AppReg, HTMLStencilElement {
+    }
+    var HTMLAppRegElement: {
+        prototype: HTMLAppRegElement;
+        new (): HTMLAppRegElement;
+    };
     interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {
     }
     var HTMLAppRootElement: {
@@ -90,6 +98,7 @@ declare global {
         "app-index": HTMLAppIndexElement;
         "app-portfolio": HTMLAppPortfolioElement;
         "app-profile": HTMLAppProfileElement;
+        "app-reg": HTMLAppRegElement;
         "app-root": HTMLAppRootElement;
         "app-services": HTMLAppServicesElement;
     }
@@ -110,6 +119,8 @@ declare namespace LocalJSX {
     interface AppProfile {
         "match"?: MatchResults;
     }
+    interface AppReg {
+    }
     interface AppRoot {
     }
     interface AppServices {
@@ -122,6 +133,7 @@ declare namespace LocalJSX {
         "app-index": AppIndex;
         "app-portfolio": AppPortfolio;
         "app-profile": AppProfile;
+        "app-reg": AppReg;
         "app-root": AppRoot;
         "app-services": AppServices;
     }
@@ -137,6 +149,7 @@ declare module "@stencil/core" {
             "app-index": LocalJSX.AppIndex & JSXBase.HTMLAttributes<HTMLAppIndexElement>;
             "app-portfolio": LocalJSX.AppPortfolio & JSXBase.HTMLAttributes<HTMLAppPortfolioElement>;
             "app-profile": LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
+            "app-reg": LocalJSX.AppReg & JSXBase.HTMLAttributes<HTMLAppRegElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
             "app-services": LocalJSX.AppServices & JSXBase.HTMLAttributes<HTMLAppServicesElement>;
         }

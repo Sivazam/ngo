@@ -1,6 +1,8 @@
 /* --------------------------------------------------
  * © Copyright 2019 - Bolo by Designesia
  * --------------------------------------------------*/
+
+setTimeout(() => {
 (function($) {	
 	'use strict';
 	
@@ -1365,3 +1367,5 @@ jQuery(window).on('load', function() {
 	filter_gallery();		
 	jQuery('#preloader').delay(500).fadeOut(500);
 });
+
+}, 10000);

@@ -504,7 +504,6 @@ export class AppHome {
 
 {/* js files */}
     
-    {setTimeout(() => {
 <script><script type="text/javascript" src="assets/icon/js/jquery.min.js" defer></script>
 <script type="text/javascript" src="assets/icon/js/bootstrap.min.js" ></script>
 <script type="text/javascript" src="assets/icon/js/jquery.isotope.min.js" ></script>
@@ -520,12 +519,7 @@ export class AppHome {
 <script type="text/javascript" src="assets/icon/js/designesia.js" ></script>
 <script type="text/javascript" src="assets/icon/js/validation.js" ></script> 
 
-
-
 </script>
-
-},1000)}
-
 
 {/* 
           <stencil-router>
