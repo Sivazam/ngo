@@ -2,8 +2,7 @@ import { Component, h } from '@stencil/core';
 import Data from '../data';
 
 //  final customized homepage
-var qwer = (new Data().data.description);
-console.log(qwer);
+
 
 
 
@@ -49,7 +48,7 @@ export class AppHome {
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                
+                {/* logo start */}
                 <div id="logo">
                     <a href="home-tab.tsx">
                         
@@ -57,7 +56,9 @@ export class AppHome {
                         <img class="logo-2 resize-2" src={new Data().data.review[13].ngo.logo.url} alt=""/>
                     </a>
                 </div>
-                
+                {/* logo end */}
+
+                {/* menu nav-bar start */}
                 <span id="menu-btn"></span>
                 
                 <nav>
@@ -81,8 +82,14 @@ export class AppHome {
     </div>
 </header>
 
-<div id="content" class="no-bottom no-top">
-    <div id="top"></div>
+  {/* menu nav-bar end */}
+
+   
+
+{/* <div id="content" class="no-bottom no-top">
+    <div id="top"></div> */}
+
+     {/* carousel start */}
 
     <section id="section-intro" class="full-height relative owl-slide-wrapper text-light no-top no-bottom" data-stellar-background-ratio=".2">
                 <div class="overlay-bg t50">
@@ -117,7 +124,9 @@ export class AppHome {
                 </div>
             </section>
 
+             {/* carousel end */}
 
+{/* aboutus block start */}
     <section id= "aboutus" data-bgcolor="#f9f9f9">
         <div class="container">
             <div class="row align-items-center">
@@ -128,9 +137,8 @@ export class AppHome {
 
                 <div class="col-md-5 offset-md-1">
                     <h2 class="mb20">About us</h2>
-                    <a href ="mailto:tejarongala@gmail.com">tejarongala@gmail.com</a>
-                    <a href ="tel:9014882779">9014882779</a>
-                    <p> {qwer}   </p>
+                   
+                    <p> {new Data().data.description}   </p>
                     <div class="spacer-half"></div>
                     <a href="#section-portfolio" class="btn-custom scroll-to">What we do</a>
                 </div>
@@ -140,6 +148,10 @@ export class AppHome {
         </div>
     </section>
 
+    {/* aboutus block end */}
+
+
+{/* stats block start */}
 
     <section  class="bg-color text-light pt60 pb60">
         <div class="container">
@@ -176,6 +188,10 @@ export class AppHome {
         </div>
     </section>
 
+{/* stats block end */}
+
+
+{/* projects-carousel block start */}
 
 
     <section id="projects" aria-label="section">
@@ -279,21 +295,13 @@ export class AppHome {
                 </div>
             </section>
 
-            <section id="section-side" class="side-bg no-padding text-light" data-bgcolor="#202020">
-                
-            </section>
+
+{/* projects-carousel block ends */}
+
+{/* activities block starts */}
 
 
-            
-
-
-
-            
-
-
-
-
-
+            <section id="section-side" class="side-bg no-padding text-light" data-bgcolor="#202020"></section>
     <section id="section-services">
         <div class="container">
 
@@ -367,30 +375,10 @@ export class AppHome {
         </div>
     </section>
 
+{/* activities block ends */}
 
 
-    {/* <section id="section-side" class="side-bg no-padding text-light bg-color pt60 pb60"  data-bgcolor="#202020">
-                <div class="image-container col-md-6 pull-left d-block d-sm-none d-md-block">
-                    <div class="background-image" data-bgimage="url(assets/icon/images/background/22.jpg)"></div>
-                </div>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="inner-padding">
-                            <div class="col-md-5 offset-md-7 wow fadeIn">
-								<h4 class="uptitle"><span class="id-color">What We Do</span></h4>
-                                <h2 class="mb20">We Make Your Dream</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                </p>
-                                <div class="spacer-half"></div>
-                                <a href="#section-contact" class="btn-custom scroll-to ">Contact Us</a>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
+{/* register block starts */}
 
             <section id="section-side-1" class="side-bg no-padding bg-color text-light">
                 <div class="image-container col-md-6 pull-left d-block d-sm-none d-md-block" data-bgimage="url({new Data().data.awards[0],photo.url})">
@@ -413,249 +401,11 @@ export class AppHome {
             </section>
 
     
-
+{/* register block ends */}
     
 
     
-
-
-
-
-
-
-            
-
-    
-    
-    
-    
-    
-    
-
-    <div class="clearfix"></div>
-
-    
-
-           
-
-
-
-            
-			
-			<div id="loader-area" data-bgcolor="#fafafa">
-                <div class="container">
-                    <div class="project-load"></div>
-                </div>
-            </div>
-    
-    
-
-{/* potrait slide bar added............ */}
-
-    {/* <section id="section-screenshots" aria-label="section" class="text-light" data-bgcolor="#2d3840">
-                <div id="ss-carousel" class="owl-carousel owl-theme">
-
-                    <figure class="picframe">
-                        <a class="image-popup" href="images/ss/1.jpg">
-                            <span class="overlay-v">
-										<span class="v-center text-center">
-											<span>
-												View larger
-											</span>
-                            </span>
-                            </span>
-                        </a>
-                        <img src="assets/images/ss/1.jpg" class="img-fullwidth" alt=""/>
-                    </figure>
-
-                    <figure class="picframe">
-                        <a class="image-popup" href="images/ss/2.jpg">
-                            <span class="overlay-v">
-										<span class="v-center text-center">
-											<span>
-												View larger
-											</span>
-                            </span>
-                            </span>
-                        </a>
-                        <img src="assets/images/ss/2.jpg" class="img-fullwidth" alt=""/>
-                    </figure>
-
-                    <figure class="picframe">
-                        <a class="image-popup" href="images/ss/3.jpg">
-                            <span class="overlay-v">
-										<span class="v-center text-center">
-											<span>
-												View larger
-											</span>
-                            </span>
-                            </span>
-                        </a>
-                        <img src="assets/images/ss/3.jpg" class="img-fullwidth" alt=""/>
-                    </figure>
-
-                    <figure class="picframe">
-                        <a class="image-popup" href="images/ss/4.jpg">
-                            <span class="overlay-v">
-										<span class="v-center text-center">
-											<span>
-												View larger
-											</span>
-                            </span>
-                            </span>
-                        </a>
-                        <img src="assets/images/ss/4.jpg" class="img-fullwidth" alt=""/>
-                    </figure>
-
-                    <figure class="picframe">
-                        <a class="image-popup" href="images/ss/5.jpg">
-                            <span class="overlay-v">
-										<span class="v-center text-center">
-											<span>
-												View larger
-											</span>
-                            </span>
-                            </span>
-                        </a>
-                        <img src="assets/images/ss/5.jpg" class="img-fullwidth" alt=""/>
-                    </figure>
-
-                    <figure class="picframe">
-                        <a class="image-popup" href="images/ss/6.jpg">
-                            <span class="overlay-v">
-										<span class="v-center text-center">
-											<span>
-												View larger
-											</span>
-                            </span>
-                            </span>
-                        </a>
-                        <img src="images/ss/6.jpg" class="img-fullwidth" alt=""/>
-                    </figure>
-
-                    <figure class="picframe">
-                        <a class="assets/image-popup" href="images/ss/7.jpg">
-                            <span class="overlay-v">
-										<span class="v-center text-center">
-											<span>
-												View larger
-											</span>
-                            </span>
-                            </span>
-                        </a>
-                        <img src="assets/images/ss/7.jpg" class="img-fullwidth" alt=""/>
-                    </figure>
-
-                    <figure class="picframe">
-                        <a class="image-popup" href="images/ss/8.jpg">
-                            <span class="overlay-v">
-										<span class="v-center text-center">
-											<span>
-												View larger
-											</span>
-                            </span>
-                            </span>
-                        </a>
-                        <img src="assets/images/ss/8.jpg" class="img-fullwidth" alt=""/>
-                    </figure>
-                </div>
-            </section> */}
-
-{/* project static overview............... */}
-    
-    {/* <section id="section-portfolio" aria-label="section-portfolio" class="no-top no-bottom" data-bgcolor="#fafafa">
-        <div class="container-fluid">
-            <div class="row no-gutters gallery-wrap sequence_pf">
-
-                <div class="col-lg-4 col-md-6 col-sm-6 sq-item">
-                    <div class="picframe wow">
-                        <div class="pf-click" data-value="project-details-image.html">
-                            <span class="overlay">
-              <span class="title">
-                <span>Single Image</span>
-                            </span>
-                            </span>
-                            <img src="assets/icon/images/portfolio/pf%20(1).jpg" class="wow" alt="" />
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 col-sm-6 sq-item">
-                    <div class="picframe wow">
-                        <div class="pf-click" data-value="project-details-slider.html">
-                            <span class="overlay">
-              <span class="title">
-                <span>Multi Images Slider</span>
-                            </span>
-                            </span>
-                            <img src="assets/icon/images/portfolio/pf%20(2).jpg" class="wow" alt="" />
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 col-sm-6 sq-item wow">
-                    <div class="picframe wow">
-                        <div class="pf-click" data-value="project-details-youtube.html">
-                            <span class="overlay">
-              <span class="title">
-                <span>Youtube Video</span>
-                            </span>
-                            </span>
-                            <img src="assets/icon/images/portfolio/pf%20(3).jpg" class="wow" alt="" />
-                        </div>
-                    </div>
-                </div>
-               
-                <div class="col-lg-4 col-md-6 col-sm-6 sq-item">
-                    <div class="picframe wow">
-                        <div class="pf-click" data-value="project-details-image-big.html">
-                            <span class="overlay">
-              <span class="title">
-                <span>Single Image Big</span>
-                            </span>
-                            </span>
-                            <img src="assets/icon/images/portfolio/pf%20(4).jpg" class="wow" alt="" />
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 col-sm-6 sq-item">
-                    <div class="picframe wow">
-                        <div class="pf-click" data-value="project-details-slider-big.html">
-                            <span class="overlay">
-              <span class="title">
-                <span>Multi Images Slider Big</span>
-                            </span>
-                            </span>
-                            <img src="assets/icon/images/portfolio/pf%20(5).jpg" class="wow" alt="" />
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 col-sm-6 sq-item">
-                    <div class="picframe wow">
-                        <div class="pf-click" data-value="project-details-youtube-big.html">
-                            <span class="overlay">
-              <span class="title">
-                <span>Youtube Video Big</span>
-                            </span>
-                            </span>
-                            <img src="assets/icon/images/portfolio/pf%20(6).jpg" class="wow" alt="" />
-                        </div>
-                    </div>
-                </div>
-                
-
-            </div>
-        </div>
-    </section> */}
-    
-
-    <div id="loader-area">
-        <div class="container">
-            <div class="project-load"></div>
-        </div>
-    </div>
+{/* Team block starts */}
 
     <section id="section-team">
                 <div class="container">
@@ -736,113 +486,10 @@ export class AppHome {
             </section>
 
 
-
+{/* team block ends */}
     
-    {/* <section id="section-blog" data-bgcolor="#f9f9f9">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-12">
-                    <div id="blog-carousel" class="owl-carousel owl-theme">
-                        <div class="post-item s1 item">
-                            <div class="date-box">
-                                <div class="m">10</div>
-                                <div class="d">JUN</div>
-                            </div>
-
-                            <div class="post-content">
-                                <div class="post-text">
-                                    <h3><a href="#">Make Better User Interface</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="post-item s1 item">
-                            <div class="post-content">
-                                <div class="date-box">
-                                    <div class="m">15</div>
-                                    <div class="d">JUN</div>
-                                </div>
-
-                                <div class="post-text">
-                                    <h3><a href="#">Experts Web Design Tips</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="post-item s1 item">
-                            <div class="post-content">
-                                <div class="date-box">
-                                    <div class="m">20</div>
-                                    <div class="d">JUN</div>
-                                </div>
-
-                                <div class="post-text">
-                                    <h3><a href="#">Importance Of Web Design</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="post-item s1 item">
-                            <div class="post-content">
-                                <div class="date-box">
-                                    <div class="m">22</div>
-                                    <div class="d">JUN</div>
-                                </div>
-
-                                <div class="post-text">
-                                    <h3><a href="#">Avoid Erros In UI Design</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="post-item s1 item">
-                            <div class="post-content">
-                                <div class="date-box">
-                                    <div class="m">28</div>
-                                    <div class="d">JUN</div>
-                                </div>
-
-                                <div class="post-text">
-                                    <h3><a href="#">Make Your Website Faster</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="post-item s1 item">
-                            <div class="post-content">
-                                <div class="date-box">
-                                    <div class="m">30</div>
-                                    <div class="d">JUN</div>
-                                </div>
-
-                                <div class="post-text">
-                                    <h3><a href="#">Create Marketing Website</a></h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section> */}
-
-
-    
-
- 
-
+   
+{/* conatctus block starts */}
 
             <section id="section-contact" class="bg-color text-light">
                 <div class="container">
@@ -910,12 +557,11 @@ export class AppHome {
                 </div>
             </section>
     
-
-    </div>
-
+{/* conatctus block ends */}
    
 
-  
+ {/* footer   starts */}  
+
     <footer>
         <div class="container" >
             <div class="row">
@@ -936,12 +582,24 @@ export class AppHome {
         </div>
 
     </footer>
-   
-    {/* <a href="#" id="back-to-top"></a>
 
-    <div id="preloader">
+     {/* footer   starts */}  
+   
+   {/* pre-loader   starts */}    
+
+    {/* <div id="preloader">
         <div class="preloader1"></div>
-    </div> */}
+    </div>  */}
+
+  {/* pre-loader  ends */}    
+
+{/* go-top floating icon */}
+
+  <a href="#" id="back-to-top"></a>
+
+
+
+{/* Router starts */}
 
 {/* <main>
           <stencil-router>
@@ -954,9 +612,6 @@ export class AppHome {
         </main> */}
     
 
-
-
-    
 
 {/* 
           <stencil-router>
@@ -971,8 +626,11 @@ export class AppHome {
 <stencil-route-link url="../app-home">
           
         </stencil-route-link>  */}
-      <a href="#" id="back-to-top"></a>
-</div>  
+
+
+{/* Router ends */}        
+      
+        </div>  
 </div>
         
     );
