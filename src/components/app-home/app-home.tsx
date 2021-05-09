@@ -11,6 +11,7 @@ console.log(qwer);
 
 @Component({
   tag: 'app-home',
+  styleUrl: 'app-home.css'
   
 })
 
@@ -51,8 +52,9 @@ export class AppHome {
                 
                 <div id="logo">
                     <a href="home-tab.tsx">
-                        <img class="logo" src="assets/icon/images/logo-light.png" alt=""/>
-                        <img class="logo-2" src="assets/icon/images/logo-dark.png" alt=""/>
+                        
+                        <img class="logo resize-1" src={new Data().data.review[13].ngo.logo.url} alt=""/>
+                        <img class="logo-2 resize-2" src={new Data().data.review[13].ngo.logo.url} alt=""/>
                     </a>
                 </div>
                 
@@ -106,7 +108,7 @@ export class AppHome {
                                     <div class="spacer-double d-block d-sm-none d-md-block"></div>
                                     <h1 class="big">We make a Living by what we get, But We make a Life from What We Give</h1>
                                     <div class="spacer-single"></div>
-                                    <div class="subtitle s2"><span><i class="fa fa-envelope-o id-color"></i>{new Data().data.reachOut.email}</span><span><i class="fa fa-map-marker id-color"></i>{new Data().data.address}</span></div>
+                                    {/* <div class="subtitle s2"><span><i class="fa fa-envelope-o id-color"></i>{new Data().data.reachOut.email}</span><span><i class="fa fa-map-marker id-color"></i>{new Data().data.address}</span></div> */}
                                 </div>
                             </div>
                         </div>
@@ -155,7 +157,9 @@ export class AppHome {
                 </div>
 
                 <div class="col-md-5 offset-md-1">
-                    <h2 class="mb20">about us</h2>
+                    <h2 class="mb20">About us</h2>
+                    <a href ="mailto:tejarongala@gmail.com">tejarongala@gmail.com</a>
+                    <a href ="tel:9014882779">9014882779</a>
                     <p> {qwer}   </p>
                     <div class="spacer-half"></div>
                     <a href="#section-portfolio" class="btn-custom scroll-to">What we do</a>
@@ -693,12 +697,12 @@ export class AppHome {
                         <div class="col-lg-3 col-md-6 col-sm-6 mb-md-30">
                             <div class="profile_pic text-center">
                                 <figure class="picframe sc-icon gray mb20">
-                                <div class="icons">
+                                {/* <div class="icons">
                                         <a href={new Data().data.team[0].reachOut.facebook}><i class="fa fa-facebook fa-lg"></i></a>
                                         <a href={new Data().data.team[0].reachOut.twitter}><i class="fa fa-twitter fa-lg"></i></a>
                                         <a href={new Data().data.team[0].reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
                                         <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    </div>
+                                    </div> */}
                                     <img src={new Data().data.team[0].photo.url} class="img-fluid" alt=""/>
                                 </figure>
 
@@ -710,12 +714,12 @@ export class AppHome {
                         <div class="col-lg-3 col-md-6 col-sm-6 mb-md-30">
                             <div class="profile_pic text-center">
                                 <figure class="picframe sc-icon gray mb20">
-                                <div class="icons">
+                                {/* <div class="icons">
                                     <a href={new Data().data.team[1].reachOut.facebook}><i class="fa fa-facebook fa-lg"></i></a>
                                         <a href={new Data().data.team[1].reachOut.twitter}><i class="fa fa-twitter fa-lg"></i></a>
                                         <a href={new Data().data.team[1].reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
                                         <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    </div>
+                                    </div> */}
                                     <img src={new Data().data.team[1].photo.url} class="img-fluid" alt=""/>
                                 </figure>
 
@@ -727,12 +731,12 @@ export class AppHome {
                         <div class="col-lg-3 col-md-6 col-sm-6 mb-md-30">
                             <div class="profile_pic text-center">
                                 <figure class="picframe sc-icon gray mb20">
-                                <div class="icons">
+                                {/* <div class="icons">
                                     <a href={new Data().data.team[2].reachOut.facebook}><i class="fa fa-facebook fa-lg"></i></a>
                                         <a href={new Data().data.team[2].reachOut.twitter}><i class="fa fa-twitter fa-lg"></i></a>
                                         <a href={new Data().data.team[2].reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
                                         <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    </div>
+                                    </div> */}
                                     <img src={new Data().data.team[2].photo.url} class="img-fluid" alt=""/>
                                 </figure>
 
@@ -744,12 +748,12 @@ export class AppHome {
                         <div class="col-lg-3 col-md-6 col-sm-6 mb-md-30">
                             <div class="profile_pic text-center">
                                 <figure class="picframe sc-icon gray mb20">
-									<div class="icons">
+									{/* <div class="icons">
                                     <a href={new Data().data.team[3].reachOut.facebook}><i class="fa fa-facebook fa-lg"></i></a>
                                         <a href={new Data().data.team[3].reachOut.twitter}><i class="fa fa-twitter fa-lg"></i></a>
                                         <a href={new Data().data.team[3].reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
                                         <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    </div>
+                                    </div> */}
                                     <img src={new Data().data.team[3].photo.url} class="img-fluid" alt=""/>
                                 </figure>
 
@@ -922,13 +926,13 @@ export class AppHome {
 
                         <div class="col-md-4">
                             <h6 class="id-color">Call Us</h6>
-                            {new Data().data.reachOut.phone1}
+                            <a  id = "dail" href = {new Data().data.reachOut.phone1}> {new Data().data.reachOut.phone1}</a> 
                             <div class="spacer-single"></div>
                             <h6 class="id-color">Address</h6>
                             {new Data().data.address}
                             <div class="spacer-single"></div>
                             <h6 class="id-color">Email Us</h6>
-                            {new Data().data.reachOut.email}
+                           <a  id = "mail" href = {new Data().data.reachOut.email}> {new Data().data.reachOut.email}</a> 
                         </div>
 
                     </div>
@@ -954,8 +958,8 @@ export class AppHome {
                                  <a href={new Data().data.reachOut.facebook}><i class="fa fa-facebook fa-lg"></i></a>
                                 <a href={new Data().data.reachOut.twitter}><i class="fa fa-twitter fa-lg"></i></a>
                                 <a href={new Data().data.reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
-                                <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                <a href="#"><i class="fa fa-rss fa-lg"></i></a>
+                                {/* <a href="#"><i class="fa fa-google-plus fa-lg"></i></a> */}
+                                {/* <a href="#"><i class="fa fa-rss fa-lg"></i></a> */}
                     </div>
                 </div>
             </div>
