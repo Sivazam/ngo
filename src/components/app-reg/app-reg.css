@@ -1,3 +1,62 @@
 :host {
   display: block;
 }
+
+
+
+.resize-1
+{
+  fill:white;
+  width: 13%;
+  height: auto;
+  border-radius: 50%;
+  border: none;
+}
+
+.resize-2
+{
+  width: 13%;
+  height: auto;
+  border-radius: 50%;
+
+}
+
+
+.resize-2:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+  transform: translateY(1px);
+  
+} 
+.resize-1:hover
+{
+opacity: 40%;
+}
+
+
+#mail,#dail
+{
+  color:aliceblue;
+}
+#mail:hover
+{
+
+  text-decoration: none;
+  opacity: 50%;
+
+}
+
+#dail:hover
+{
+
+  text-decoration: none;
+  opacity: 50%;
+
+}
+
+
+#size
+{
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+}

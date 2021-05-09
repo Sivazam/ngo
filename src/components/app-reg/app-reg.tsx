@@ -4,32 +4,14 @@ import Data from "../data"
 
 @Component({
   tag: 'app-reg',
+  styleUrl:'app-reg.css'
  
-  shadow: true,
 })
 export class AppReg {
 
   render() {
     return (
-    
-
-
       <div id="wrapper">
-
-
-<link rel="stylesheet" href="assets/icon/css/bootstrap.min.css" type="text/css"/>
-	<link rel="stylesheet" href="assets/icon/css/bootstrap-grid.min.css" type="text/css"/>
-	<link rel="stylesheet" href="assets/icon/css/bootstrap-reboot.min.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/animate.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/owl.carousel.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/owl.theme.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/owl.transitions.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/magnific-popup.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/jquery.countdown.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/style.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/colors/red.css" type="text/css"></link>
-
-
         <div class="page-overlay">
             <div class="preloader-wrap">
                 <div class="spinner">
@@ -49,8 +31,8 @@ export class AppReg {
                        
                         <div id="logo">
                             <a href="index.html">
-                                <img class="logo" src="assets/icon/images/logo-light.png" alt=""/>
-                                <img class="logo-2" src="assets/icon/images/logo-dark.png" alt=""/>
+                            <img class="logo resize-1" src={new Data().data.review[13].ngo.logo.url} alt=""/>
+                        <img class="logo-2 resize-2" src={new Data().data.review[13].ngo.logo.url} alt=""/>
                             </a>
                         </div>
                         
@@ -65,7 +47,7 @@ export class AppReg {
                                 <li><a href="index.html">Home</a></li>
 							                	<li><a href="">About Us</a></li>
                                 <li><a href="services.html">projects</a></li>
-                                <li><a href="portfolio.html">Volunteer Registration</a></li>
+                                <li><a href="portfolio.html">Register</a></li>
                                 <li><a href="blog.html">Donate</a></li>
                                 <li><a href="contact.html">Contact-Us</a></li>
                             </ul>
@@ -172,21 +154,21 @@ export class AppReg {
         
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 sm-mb10">
-                        <div class="mt10">&copy; Copyright 2020 - Bolo by Designesia </div>
-                    </div>
+            <div class="row">
+                <div class="col-md-6 sm-mb10">
+                    <div class="mt10">&copy; Copyright 2021 - {new Data().data.slug} </div>
+                </div>
 
-                    <div class="col-md-6 text-left text-md-right">
-                        <div class="social-icons">
-                            <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                            <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                            <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
-                            <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                            <a href="#"><i class="fa fa-rss fa-lg"></i></a>
-                        </div>
+                <div class="col-md-6 text-left text-md-right">
+                    <div class="social-icons">
+                                 <a href={new Data().data.reachOut.facebook}><i class="fa fa-facebook fa-lg"></i></a>
+                                <a href={new Data().data.reachOut.twitter}><i class="fa fa-twitter fa-lg"></i></a>
+                                <a href={new Data().data.reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
+                                {/* <a href="#"><i class="fa fa-google-plus fa-lg"></i></a> */}
+                                {/* <a href="#"><i class="fa fa-rss fa-lg"></i></a> */}
                     </div>
                 </div>
+            </div>
             </div>
 
         </footer>
@@ -198,23 +180,6 @@ export class AppReg {
             <div class="preloader1"></div>
         </div> */}
 
-
-        
-
-    <script src="assets/icon/js/jquery.min.js"></script>
-        <script src="assets/icon/js/bootstrap.min.js"></script>
-        <script src="assets/icon/js/jquery.isotope.min.js"></script>
-        <script src="assets/icon/js/easing.js"></script>
-        <script src="assets/icon/js/owl.carousel.js"></script>
-        <script src="assets/icon/js/jquery.countTo.js"></script>
-        <script src="assets/icon/js/wow.min.js"></script>
-        <script src="assets/icon/js/jquery.magnific-popup.min.js"></script>
-        <script src="assets/icon/js/enquire.min.js"></script>
-        <script src="assets/icon/js/jquery.stellar.min.js"></script>
-        <script src="assets/icon/js/jquery.plugin.js"></script>		
-		<script src="assets/icon/js/jquery.easeScroll.js"></script>
-        <script src="assets/icon/js/designesia.js"></script>
-        <script src="assets/icon/js/validation.js"></script>
     </div>
       
     );

@@ -1,47 +1,17 @@
 import { Component, h } from '@stencil/core';
+import Data from "../data"
 
 @Component({
   tag: 'app-donate',
+  styleUrl:'app-donate.css'
   
-  shadow: true
+ 
 })
 export class Doante {
 
   render() {
     return (
       <div>
-
-<link rel="stylesheet" href="assets/icon/css/bootstrap.min.css" type="text/css"/>
-	<link rel="stylesheet" href="assets/icon/css/bootstrap-grid.min.css" type="text/css"/>
-	<link rel="stylesheet" href="assets/icon/css/bootstrap-reboot.min.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/animate.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/owl.carousel.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/owl.theme.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/owl.transitions.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/magnific-popup.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/jquery.countdown.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/style.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/colors/red.css" type="text/css"></link>
-
-
-
-
-    <script src="assets/icon/js/jquery.min.js"></script>
-        <script src="assets/icon/js/bootstrap.min.js"></script>
-        <script src="assets/icon/js/jquery.isotope.min.js"></script>
-        <script src="assets/icon/js/easing.js"></script>
-        <script src="assets/icon/js/owl.carousel.js"></script>
-        <script src="assets/icon/js/jquery.countTo.js"></script>
-        <script src="assets/icon/js/wow.min.js"></script>
-        <script src="assets/icon/js/jquery.magnific-popup.min.js"></script>
-        <script src="assets/icon/js/enquire.min.js"></script>
-        <script src="assets/icon/js/jquery.stellar.min.js"></script>
-        <script src="assets/icon/js/jquery.plugin.js"></script>		
-		<script src="assets/icon/js/jquery.easeScroll.js"></script>
-        <script src="assets/icon/js/designesia.js"></script>
-        <script src="assets/icon/js/validation.js"></script>
-
-        
     <div id="wrapper">
 
 <div class="page-overlay">
@@ -63,8 +33,8 @@ export class Doante {
                
                 <div id="logo">
                     <a href="index.html">
-                        <img class="logo" src="assets/icon/images/logo-light.png" alt=""/>
-                        <img class="logo-2" src="assets/icon/images/logo-dark.png" alt=""/>
+                        <img class="logo resize-1" src={new Data().data.review[13].ngo.logo.url} alt=""/>
+                        <img class="logo-2 resize-2" src={new Data().data.review[13].ngo.logo.url} alt=""/>
                     </a>
                 </div>
                 
@@ -75,11 +45,11 @@ export class Doante {
                         <li><a href="index.html">Home</a>
           
         </li>
-        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="services.html">Projects</a></li>
+                        <li><a href="portfolio.html">Register</a></li>
+                        <li><a href="blog.html">Donate</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </nav>
     
@@ -101,7 +71,7 @@ export class Doante {
                 <div class="row">
                     <div class="col-md-12">
                         <h1>Donate</h1>
-        <p>We Make a living by what we get, We make a Life by What we</p>
+                        <p>Giving is Living</p>
                     </div>
                 </div>
             </div>
@@ -176,43 +146,23 @@ export class Doante {
                 </div>
             </section>
             
-    
-    <section id="section-clients" aria-label="section" class="pt60 pb40" data-bgcolor="#f9f9f9">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center wow fadeInUp">
-                    <div class="owl-carousel owl-sponsors gray">
-                        <div class="item"><img src="assets/icon/images/logo/1.png" alt=""/></div>
-                        <div class="item"><img src="assets/icon/images/logo/2.png" alt=""/></div>
-                        <div class="item"><img src="assets/icon/images/logo/3.png" alt=""/></div>
-                        <div class="item"><img src="assets/icon/images/logo/4.png" alt=""/></div>
-                        <div class="item"><img src="assets/icon/images/logo/5.png" alt=""/></div>
-                        <div class="item"><img src="assets/icon/images/logo/6.png" alt=""/></div>
-                        <div class="item"><img src="assets/icon/images/logo/7.png" alt=""/></div>
-                        <div class="item"><img src="assets/icon/images/logo/8.png" alt=""/></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-   
 
     </div>
     
     <footer>
         <div class="container">
-            <div class="row">
+        <div class="row">
                 <div class="col-md-6 sm-mb10">
-                    <div class="mt10">&copy; Copyright 2020 - Bolo by Designesia </div>
+                    <div class="mt10">&copy; Copyright 2021 - {new Data().data.slug} </div>
                 </div>
 
                 <div class="col-md-6 text-left text-md-right">
                     <div class="social-icons">
-                        <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                        <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                        <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
-                        <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                        <a href="#"><i class="fa fa-rss fa-lg"></i></a>
+                                 <a href={new Data().data.reachOut.facebook}><i class="fa fa-facebook fa-lg"></i></a>
+                                <a href={new Data().data.reachOut.twitter}><i class="fa fa-twitter fa-lg"></i></a>
+                                <a href={new Data().data.reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
+                                {/* <a href="#"><i class="fa fa-google-plus fa-lg"></i></a> */}
+                                {/* <a href="#"><i class="fa fa-rss fa-lg"></i></a> */}
                     </div>
                 </div>
             </div>

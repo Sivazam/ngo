@@ -4,7 +4,7 @@ import Data from "../data"
 @Component({
   tag: 'app-contactus',
   styleUrl: 'app-contactus.css',
-  shadow: true,
+  
 })
 export class AppContactus {
 
@@ -14,17 +14,7 @@ export class AppContactus {
       <div id="wrapper">
 
 
-<link rel="stylesheet" href="assets/icon/css/bootstrap.min.css" type="text/css"/>
-	<link rel="stylesheet" href="assets/icon/css/bootstrap-grid.min.css" type="text/css"/>
-	<link rel="stylesheet" href="assets/icon/css/bootstrap-reboot.min.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/animate.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/owl.carousel.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/owl.theme.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/owl.transitions.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/magnific-popup.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/jquery.countdown.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/style.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/colors/red.css" type="text/css"></link>
+
 
 
         <div class="page-overlay">
@@ -46,8 +36,8 @@ export class AppContactus {
                        
                         <div id="logo">
                             <a href="index.html">
-                                <img class="logo" src="assets/icon/images/logo-light.png" alt=""/>
-                                <img class="logo-2" src="assets/icon/images/logo-dark.png" alt=""/>
+                            <img class="logo resize-1" src={new Data().data.review[13].ngo.logo.url} alt=""/>
+                            <img class="logo-2 resize-2" src={new Data().data.review[13].ngo.logo.url} alt=""/> 
                             </a>
                         </div>
                         
@@ -59,12 +49,11 @@ export class AppContactus {
                        
                         <nav>
                             <ul id="mainmenu">
-                                <li><a href="index.html">Home</a></li>
-							                	<li><a href="">About Us</a></li>
-                                <li><a href="services.html">projects</a></li>
-                                <li><a href="portfolio.html">Volunteer Registration</a></li>
-                                <li><a href="blog.html">Donate</a></li>
-                                <li><a href="contact.html">Contact-Us</a></li>
+                                  <li><a href="about-us.html">About Us</a></li>
+                                 <li><a href="services.html">Projects</a></li>
+                                <li><a href="portfolio.html">Register</a></li>
+                                 <li><a href="blog.html">Donate</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </nav>
 					
@@ -128,12 +117,16 @@ export class AppContactus {
 
                                     <div class="col-md-12">
                                         <div id='submit'>
-                                            <input type='submit' id='send_message' value='Submit Form' class="btn btn-custom color-2"/>
+                                            <input type='submit' id='send_message' value='Submit' class="btn btn-custom color-2"/>
                                         </div>
+                                        
                                         <div id='mail_success' class='success'>Your message has been sent successfully.</div>
                                         <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div>
                                     </div>
+                                    <div>
 
+                                    <p id = "note">(Note : kindly allow us, We will revert back within <b>12-24 hrs</b> )</p>
+                                    </div>
 
                                 </div>
                             </form>
@@ -142,13 +135,13 @@ export class AppContactus {
 
                         <div class="col-md-4">
                             <h6 class="id-color">Call Us</h6>
-                            {new Data().data.reachOut.phone1}
+                            <a  id = "dail" href = {new Data().data.reachOut.phone1}> {new Data().data.reachOut.phone1}</a> 
                             <div class="spacer-single"></div>
                             <h6 class="id-color">Address</h6>
                             {new Data().data.address}
                             <div class="spacer-single"></div>
                             <h6 class="id-color">Email Us</h6>
-                            {new Data().data.reachOut.email}
+                           <a  id = "mail" href = {new Data().data.reachOut.email}> {new Data().data.reachOut.email}</a> 
                         </div>
 
                     </div>
@@ -161,21 +154,21 @@ export class AppContactus {
         
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 sm-mb10">
-                        <div class="mt10">&copy; Copyright 2020 - Bolo by Designesia </div>
-                    </div>
+            <div class="row">
+                <div class="col-md-6 sm-mb10">
+                    <div class="mt10">&copy; Copyright 2021 - {new Data().data.slug} </div>
+                </div>
 
-                    <div class="col-md-6 text-left text-md-right">
-                        <div class="social-icons">
-                            <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                            <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                            <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
-                            <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                            <a href="#"><i class="fa fa-rss fa-lg"></i></a>
-                        </div>
+                <div class="col-md-6 text-left text-md-right">
+                    <div class="social-icons">
+                                 <a href={new Data().data.reachOut.facebook}><i class="fa fa-facebook fa-lg"></i></a>
+                                <a href={new Data().data.reachOut.twitter}><i class="fa fa-twitter fa-lg"></i></a>
+                                <a href={new Data().data.reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
+                                {/* <a href="#"><i class="fa fa-google-plus fa-lg"></i></a> */}
+                                {/* <a href="#"><i class="fa fa-rss fa-lg"></i></a> */}
                     </div>
                 </div>
+            </div>
             </div>
 
         </footer>
@@ -190,20 +183,6 @@ export class AppContactus {
 
         
 
-    <script src="assets/icon/js/jquery.min.js"></script>
-        <script src="assets/icon/js/bootstrap.min.js"></script>
-        <script src="assets/icon/js/jquery.isotope.min.js"></script>
-        <script src="assets/icon/js/easing.js"></script>
-        <script src="assets/icon/js/owl.carousel.js"></script>
-        <script src="assets/icon/js/jquery.countTo.js"></script>
-        <script src="assets/icon/js/wow.min.js"></script>
-        <script src="assets/icon/js/jquery.magnific-popup.min.js"></script>
-        <script src="assets/icon/js/enquire.min.js"></script>
-        <script src="assets/icon/js/jquery.stellar.min.js"></script>
-        <script src="assets/icon/js/jquery.plugin.js"></script>		
-		<script src="assets/icon/js/jquery.easeScroll.js"></script>
-        <script src="assets/icon/js/designesia.js"></script>
-        <script src="assets/icon/js/validation.js"></script>
     </div>
       
     );

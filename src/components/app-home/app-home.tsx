@@ -4,27 +4,13 @@ import Data from '../data';
 //  final customized homepage
 
 
-
-
-
-
 @Component({
   tag: 'app-home',
   styleUrl: 'app-home.css'
   
 })
 
-
-
-
-
-
-
 export class AppHome {
-
-  
- 
- 
   render() {
    
     return (
@@ -50,7 +36,7 @@ export class AppHome {
             <div class="col-md-12">
                 {/* logo start */}
                 <div id="logo">
-                    <a href="home-tab.tsx">
+                    <a href="section-home">
                         
                         <img class="logo resize-1" src={new Data().data.review[13].ngo.logo.url} alt=""/>
                         <img class="logo-2 resize-2" src={new Data().data.review[13].ngo.logo.url} alt=""/>
@@ -64,14 +50,12 @@ export class AppHome {
                 <nav>
                     <ul id="mainmenu">
                     
-                        <li><a  href="#section-content">Home</a>
-         
-        </li>
-                        <li><a href="#section-aboutus">About Us</a></li>
-                        <li><a href="#section-projects">Projects</a></li>
-                        <li><a href="portfolio.html">Register</a></li>
-                        <li><a href="blog.html">Donate</a></li>
-                        <li><a href="../app-contactus">Conatct Us</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Conatct Us</a></li>
                     </ul>
                 </nav>
     
@@ -194,7 +178,7 @@ export class AppHome {
 {/* projects-carousel block start */}
 
 
-    <section id="projects" aria-label="section">
+    <section id="section-portfolio" aria-label="section">
 				
 				<div class="col-md-12 text-center">
 							<h4 class="uptitle id-color">Stronger Together</h4>
@@ -380,7 +364,7 @@ export class AppHome {
 
 {/* register block starts */}
 
-            <section id="section-side-1" class="side-bg no-padding bg-color text-light">
+            <section id="section-reg" class="side-bg no-padding bg-color text-light">
                 <div class="image-container col-md-6 pull-left d-block d-sm-none d-md-block" data-bgimage="url({new Data().data.awards[0],photo.url})">
                 </div>
 
@@ -491,7 +475,7 @@ export class AppHome {
    
 {/* conatctus block starts */}
 
-            <section id="section-contact" class="bg-color text-light">
+            <section id="section-contactus" class="bg-color text-light">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
