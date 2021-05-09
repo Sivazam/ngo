@@ -2,20 +2,19 @@
   display: block;
 }
 
-
 .resize-1
 {
   fill:white;
-  width: 13%;
-  height: auto;
+  height: 70px;
+  width: auto;
   border-radius: 50%;
   border: none;
 }
 
 .resize-2
 {
-  width: 13%;
-  height: auto;
+  height: 70px;
+  width: auto;
   border-radius: 50%;
 
 }

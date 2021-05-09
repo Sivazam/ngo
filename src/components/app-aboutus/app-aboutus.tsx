@@ -48,14 +48,12 @@ export class AppAboutus {
                         {/* <!-- mainmenu begin --> */}
                         <nav>
                             <ul id="mainmenu">
-                                <li><a href="index.html">Home</a>
-                            
-                                </li>
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="portfolio.html">Portfolio</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Conatct Us</a></li>
                             </ul>
                         </nav>
                         {/* <!-- mainmenu close --> */}
