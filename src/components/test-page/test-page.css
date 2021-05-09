@@ -1,0 +1,90 @@
+div{
+  display: block;
+}
+
+.de_light
+{
+  display: block;
+}
+
+#wrapper
+{
+  background-size: cover;
+}
+
+.page-overlay,.bounce1,.bounce2,.bounce3,.container,.row,.col-md-12,.logo,.overlay-bg t50,.container,.image-container,.row,.sequence
+{
+  background-size: cover;
+}
+
+.preloader-wrap
+{
+  background-size: cover;
+}
+
+.spinner,.row,.inner-padding,.section-services,.col-md-8,.col-md-4,.text,.feature-box ,.bg-color,.section-team,.container-fluid,.col-lg-3 ,.profile_pic,.icons,.mt10,.social-icons
+{
+  background-size: cover;
+}
+
+
+.no-separator
+{
+  display: none;
+}
+
+#content,#top
+{
+  background-size: cover;
+}
+
+#subheader
+{
+  background-image: url("assets/icon/images/background/10.png");
+  background-size: cover;
+}
+
+#section-side
+{
+  background-color: rgb(249, 249, 249);
+  background-size: cover;
+}
+
+.background-image
+{
+  background-image: url("assets/icon/images/background/11.jpg");
+   background-size: cover;
+}
+
+
+.col-md-4{
+  background-size: cover; 
+  visibility: visible; 
+ animation-name: fadeIn;
+}
+
+.align-items-center
+{
+  display: flex;
+  background-size: cover; 
+}
+
+
+.col-md-6{
+  background-size: cover;
+   visibility: visible;
+    animation-delay: 0s;
+     animation-name: fadeInRight;
+}
+
+.preloader
+{
+  background-size: cover;
+   display: none;
+}
+
+.preloader1
+{
+  top: 331px; 
+  background-size: cover;
+}

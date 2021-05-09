@@ -13,6 +13,8 @@ export namespace Components {
     }
     interface AppContactus {
     }
+    interface AppDonate {
+    }
     interface AppHome {
     }
     interface AppIndex {
@@ -27,6 +29,8 @@ export namespace Components {
     interface AppRoot {
     }
     interface AppServices {
+    }
+    interface TestPage {
     }
 }
 declare global {
@@ -47,6 +51,12 @@ declare global {
     var HTMLAppContactusElement: {
         prototype: HTMLAppContactusElement;
         new (): HTMLAppContactusElement;
+    };
+    interface HTMLAppDonateElement extends Components.AppDonate, HTMLStencilElement {
+    }
+    var HTMLAppDonateElement: {
+        prototype: HTMLAppDonateElement;
+        new (): HTMLAppDonateElement;
     };
     interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
     }
@@ -90,10 +100,17 @@ declare global {
         prototype: HTMLAppServicesElement;
         new (): HTMLAppServicesElement;
     };
+    interface HTMLTestPageElement extends Components.TestPage, HTMLStencilElement {
+    }
+    var HTMLTestPageElement: {
+        prototype: HTMLTestPageElement;
+        new (): HTMLTestPageElement;
+    };
     interface HTMLElementTagNameMap {
         "app-aboutus": HTMLAppAboutusElement;
         "app-blog": HTMLAppBlogElement;
         "app-contactus": HTMLAppContactusElement;
+        "app-donate": HTMLAppDonateElement;
         "app-home": HTMLAppHomeElement;
         "app-index": HTMLAppIndexElement;
         "app-portfolio": HTMLAppPortfolioElement;
@@ -101,6 +118,7 @@ declare global {
         "app-reg": HTMLAppRegElement;
         "app-root": HTMLAppRootElement;
         "app-services": HTMLAppServicesElement;
+        "test-page": HTMLTestPageElement;
     }
 }
 declare namespace LocalJSX {
@@ -109,6 +127,8 @@ declare namespace LocalJSX {
     interface AppBlog {
     }
     interface AppContactus {
+    }
+    interface AppDonate {
     }
     interface AppHome {
     }
@@ -125,10 +145,13 @@ declare namespace LocalJSX {
     }
     interface AppServices {
     }
+    interface TestPage {
+    }
     interface IntrinsicElements {
         "app-aboutus": AppAboutus;
         "app-blog": AppBlog;
         "app-contactus": AppContactus;
+        "app-donate": AppDonate;
         "app-home": AppHome;
         "app-index": AppIndex;
         "app-portfolio": AppPortfolio;
@@ -136,6 +159,7 @@ declare namespace LocalJSX {
         "app-reg": AppReg;
         "app-root": AppRoot;
         "app-services": AppServices;
+        "test-page": TestPage;
     }
 }
 export { LocalJSX as JSX };
@@ -145,6 +169,7 @@ declare module "@stencil/core" {
             "app-aboutus": LocalJSX.AppAboutus & JSXBase.HTMLAttributes<HTMLAppAboutusElement>;
             "app-blog": LocalJSX.AppBlog & JSXBase.HTMLAttributes<HTMLAppBlogElement>;
             "app-contactus": LocalJSX.AppContactus & JSXBase.HTMLAttributes<HTMLAppContactusElement>;
+            "app-donate": LocalJSX.AppDonate & JSXBase.HTMLAttributes<HTMLAppDonateElement>;
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-index": LocalJSX.AppIndex & JSXBase.HTMLAttributes<HTMLAppIndexElement>;
             "app-portfolio": LocalJSX.AppPortfolio & JSXBase.HTMLAttributes<HTMLAppPortfolioElement>;
@@ -152,6 +177,7 @@ declare module "@stencil/core" {
             "app-reg": LocalJSX.AppReg & JSXBase.HTMLAttributes<HTMLAppRegElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
             "app-services": LocalJSX.AppServices & JSXBase.HTMLAttributes<HTMLAppServicesElement>;
+            "test-page": LocalJSX.TestPage & JSXBase.HTMLAttributes<HTMLTestPageElement>;
         }
     }
 }

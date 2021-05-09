@@ -1,6 +1,8 @@
 
 export default class Data{
     data = {
+
+      
         "slug": "thozhan",
         "activities": [ "Road Safety Awareness", " Orphanage Visit", " Youth Empowerment", " Seminar and Workshops" ],
         "awards": [
@@ -4591,5 +4593,6 @@ export default class Data{
           "baseImage": { "url": "" },
           "offNextId": 1000
         }
+
       };
 }

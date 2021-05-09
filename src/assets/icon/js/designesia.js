@@ -1368,4 +1368,7 @@ jQuery(window).on('load', function() {
 	jQuery('#preloader').delay(500).fadeOut(500);
 });
 
+console.log('Script file Executed');
 }, 10000);
+
+console.log('Script file loaded');

@@ -3,7 +3,6 @@ import Data from "../data"
 @Component({
   tag: 'app-index',
  
-  shadow: true,
 })
 export class AppIndex {
 
@@ -384,35 +383,7 @@ export class AppIndex {
 
 
 
-        
-    <link rel="stylesheet" href="assets/icon/css/bootstrap.min.css" type="text/css"/>
-	<link rel="stylesheet" href="assets/icon/css/bootstrap-grid.min.css" type="text/css"/>
-	<link rel="stylesheet" href="assets/icon/css/bootstrap-reboot.min.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/animate.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/owl.carousel.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/owl.theme.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/owl.transitions.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/magnific-popup.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/jquery.countdown.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/jquery.pagepiling.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/style.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/icon/css/colors/red.css" type="text/css"></link>
 
-    <script src="assets/icon/js/jquery.min.js"></script>
-    <script src="assets/icon/js/bootstrap.min.js"></script>
-    <script src="assets/icon/js/jquery.isotope.min.js"></script>
-    <script src="assets/icon/js/easing.js"></script>
-    <script src="assets/icon/js/owl.carousel.js"></script>
-    <script src="assets/icon/js/jquery.countTo.js"></script>
-    <script src="assets/icon/js/wow.min.js"></script>
-    <script src="assets/icon/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/icon/js/enquire.min.js"></script>
-    <script src="assets/icon/js/jquery.stellar.min.js"></script>
-    <script src="assets/icon/js/jquery.plugin.js"></script>
-	<script src="assets/icon/js/jquery.easeScroll.js"></script>
-    <script src="assets/icon/js/designesia.js"></script>
-    <script src="assets/icon/js/validation.js"></script>
-    <script src="assets/icon/js/jquery.pagepiling.min.js"></script>
 
     </div>
     
