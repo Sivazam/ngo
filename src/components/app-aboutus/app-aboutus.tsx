@@ -3,34 +3,17 @@ import Data from "../data";
 
 @Component({
   tag: 'app-aboutus',
-//   styleUrl: 'app-aboutus.css',
+  styleUrl: 'app-aboutus.css',
 
   
 })
 export class AppAboutus {
 
   render() {
-      console.log('About us :: Render');
+      
     return (
         <span>
         
-        {/* <!-- CSS Files
-            ================================================== --> */}
-            {/* <link rel="stylesheet" href="assets/icon/css/bootstrap.min.css" type="text/css"/>
-            <link rel="stylesheet" href="assets/icon/css/bootstrap-grid.min.css" type="text/css"/>
-            <link rel="stylesheet" href="assets/icon/css/bootstrap-reboot.min.css" type="text/css"/>
-            <link rel="stylesheet" href="assets/icon/css/animate.css" type="text/css"/>
-            <link rel="stylesheet" href="assets/icon/css/owl.carousel.css" type="text/css"/>
-            <link rel="stylesheet" href="assets/icon/css/owl.theme.css" type="text/css"/>
-            <link rel="stylesheet" href="assets/icon/css/owl.transitions.css" type="text/css"/>
-            <link rel="stylesheet" href="assets/icon/css/magnific-popup.css" type="text/css"/>
-            <link rel="stylesheet" href="assets/icon/css/jquery.countdown.css" type="text/css"/>
-            <link rel="stylesheet" href="assets/icon/css/style.css" type="text/css"/>
-            <link rel="stylesheet" href="assets/icon/css/colors/red.css" type="text/css"/> */}
-        
-        
-        
-              
             <div id="wrapper">
         
         <div class="page-overlay">
@@ -52,8 +35,8 @@ export class AppAboutus {
                         {/* <!-- logo begin --> */}
                         <div id="logo">
                             <a href="index.html">
-                                <img class="logo" src="assets/icon/images/logo-light.png" alt=""/>
-                                <img class="logo-2" src="assets/icon/images/logo-dark.png" alt=""/>
+                            <img class="logo resize-1" src={new Data().data.review[13].ngo.logo.url} alt=""/>
+                            <img class="logo-2 resize-2" src={new Data().data.review[13].ngo.logo.url} alt=""/>
                             </a>
                         </div>
                         {/* <!-- logo close --> */}
@@ -199,13 +182,13 @@ export class AppAboutus {
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="profile_pic text-center">
                                 <figure class="picframe sc-icon mb20">
-                                    <div class="icons">
+                                    {/* <div class="icons">
                                         <a href={new Data().data.team[0].reachOut.facebook}><i class="fa fa-facebook fa-lg"></i></a>
                                         <a href={new Data().data.team[0].reachOut.twitter}><i class="fa fa-twitter fa-lg"></i></a>
                                         <a href={new Data().data.team[0].reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
                                         <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    </div>
-                                    <img src={new Data().data.team[0].photo.url} class="img-fluid" alt=""/>
+                                    </div> */}
+                                    <img  id = "size" src={new Data().data.team[0].photo.url} class="img-fluid" alt=""/>
                                 </figure>
         
                                 <h3>{new Data().data.team[0].name}</h3>
@@ -216,12 +199,12 @@ export class AppAboutus {
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="profile_pic text-center">
                                 <figure class="picframe sc-icon mb20">
-                                    <div class="icons">
+                                    {/* <div class="icons">
                                     <a href={new Data().data.team[1].reachOut.facebook}><i class="fa fa-facebook fa-lg"></i></a>
                                         <a href={new Data().data.team[1].reachOut.twitter}><i class="fa fa-twitter fa-lg"></i></a>
                                         <a href={new Data().data.team[1].reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
                                         <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    </div>
+                                    </div> */}
                                     <img src={new Data().data.team[1].photo.url} class="img-fluid" alt=""/>
                                 </figure>
         
@@ -233,12 +216,12 @@ export class AppAboutus {
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="profile_pic text-center">
                                 <figure class="picframe sc-icon mb20">
-                                    <div class="icons">
+                                    {/* <div class="icons">
                                     <a href={new Data().data.team[2].reachOut.facebook}><i class="fa fa-facebook fa-lg"></i></a>
                                         <a href={new Data().data.team[2].reachOut.twitter}><i class="fa fa-twitter fa-lg"></i></a>
                                         <a href={new Data().data.team[2].reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
                                         <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    </div>
+                                    </div> */}
                                     <img src={new Data().data.team[2].photo.url} class="img-fluid" alt=""/>
                                 </figure>
         
@@ -250,12 +233,12 @@ export class AppAboutus {
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="profile_pic text-center">
                                 <figure class="picframe sc-icon mb20">
-                                    <div class="icons">
+                                    {/* <div class="icons">
                                     <a href={new Data().data.team[3].reachOut.facebook}><i class="fa fa-facebook fa-lg"></i></a>
                                     <a href={new Data().data.team[3].reachOut.twitter}><i class="fa fa-twitter fa-lg"></i></a>
                                     <a href={new Data().data.team[3].reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
                                         <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    </div>
+                                    </div> */}
                                     <img src={new Data().data.team[3].photo.url} class="img-fluid" alt=""/>
                                 </figure>
         
@@ -276,7 +259,7 @@ export class AppAboutus {
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 sm-mb10">
-                            <div class="mt10">&copy; Copyright 2020 - Bolo by Designesia </div>
+                            <div class="mt10">&copy; Copyright 2021 - {new Data().data.slug} </div>
                         </div>
         
                         <div class="col-md-6 text-left text-md-right">
@@ -284,8 +267,8 @@ export class AppAboutus {
                                 <a href={new Data().data.reachOut.facebook}><i class="fa fa-facebook fa-lg"></i></a>
                                 <a href={new Data().data.reachOut.twitter}><i class="fa fa-twitter fa-lg"></i></a>
                                 <a href={new Data().data.reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
-                                <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                <a href="#"><i class="fa fa-rss fa-lg"></i></a>
+                                {/* <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                <a href="#"><i class="fa fa-rss fa-lg"></i></a> */}
                             </div>
                         </div>
                     </div>

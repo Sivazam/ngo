@@ -118,36 +118,6 @@ export class AppHome {
             </section>
 
 
-    
-
-    
-    {/* <section id="section-intro" class="full-height relative owl-slide-wrapper text-light no-top no-bottom" data-bgimage="url(assets/icon/images/background/9.jpg)" data-stellar-background-ratio=".2">
-        <div class="overlay-bg t50">
-
-            <div class="center-y relative">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="spacer-double d-block d-sm-none d-md-block"></div>
-          <h3>Awards Winning</h3>
-                            <h1 class="big b">Creative Advertising <span class="id-color">&amp;</span> Branding Agency</h1>
-                            <div class="spacer-single"></div>
-                            <a href="https://themeforest.net/item/bolo-onepage-creative-website-template/25030305" class="btn-custom">Buy Bolo Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <a href="#section-services" class="scroll-to">
-            <span class="mouse">
-     <span class="scroll"></span>
-            </span>
-        </a>
-    </section> */}
-
-    
     <section id= "aboutus" data-bgcolor="#f9f9f9">
         <div class="container">
             <div class="row align-items-center">
@@ -1001,7 +971,7 @@ export class AppHome {
 <stencil-route-link url="../app-home">
           
         </stencil-route-link>  */}
-      
+      <a href="#" id="back-to-top"></a>
 </div>  
 </div>
         
