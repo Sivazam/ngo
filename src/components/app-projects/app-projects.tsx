@@ -69,7 +69,7 @@ export class AppProjects {
 {/* <!-- header close --> */}
 
 
-<section id="subheader" class="text-light" data-bgimage="url(assets/icon/images/background/17.jpg)" data-stellar-background-ratio=".2">
+<section id="subheader" class="text-light" data-bgimage="url(assets/icon/images/background/21.jpg)" data-stellar-background-ratio=".2">
                 <div class="overlay-bg t50">
 
                     <div class="container">
@@ -93,15 +93,15 @@ export class AppProjects {
         <div class="container">
             <div class="row align-items-center">
 
-            <div class="col-md-5 offset-md-1">
-                <img src={new Data().data.projects[0].photo.url} class="mb-sm-30 img-fluid" alt=""/>
+            <div  class="col-md-5 offset-md-1">
+                <img  id= "space" src={new Data().data.projects[0].photo.url} class="mb-sm-30 img-fluid" alt=""/>
                 </div>
                 <div class="clearfix"></div>
-                <div class="col-md-6">
+                <div class="col-md-4 offset-md-2">
                 <h2 class="mb20">{new Data().data.projects[0].photo.caption}</h2>
-                    <p>{new Data().data.projects[0].description}</p>
+                    <p>{new Data().data.projects[0].description.slice(0,200)}.......[....]</p>
                     <div class="spacer-half"></div>
-                    <a href="#section-portfolio" class="btn-custom scroll-to">See Our Works</a>
+                    <a href="#section-portfolio" class="btn-custom scroll-to">Read more</a>
                 </div>
 
                 
@@ -123,15 +123,15 @@ export class AppProjects {
         <div class="container">
             <div class="row align-items-center">
 
-                <div class="col-md-6">
+                <div class="col-md-4 offset-md-2">
                     <h2 class="mb20">{new Data().data.projects[1].photo.caption}</h2>
-                    <p>{new Data().data.projects[1].description}</p>
+                    <p>{new Data().data.projects[1].description.slice(0,200)}.......[....]</p>
                     <div class="spacer-half"></div>
-                    <a href="#section-portfolio" class="btn-custom scroll-to">See Our Works</a>
+                    <a id = "pad" href="#section-portfolio" class="btn-custom scroll-to">Read more</a>
                 </div>
 
                 <div class="col-md-5 offset-md-1">
-                <img src={new Data().data.projects[1].photo.url} class="mb-sm-30 img-fluid" alt=""/>
+                <img id="space" src={new Data().data.projects[1].photo.url} class="mb-sm-30 img-fluid" alt=""/>
                 </div>
 
                 
@@ -153,14 +153,14 @@ export class AppProjects {
             <div class="row align-items-center">
 
                 <div class="col-md-5 offset-md-1">
-                <img src={new Data().data.projects[2].photo.url} class="mb-sm-30 img-fluid" alt=""/>
+                <img id= "space" src={new Data().data.projects[2].photo.url} class="mb-sm-30 img-fluid" alt=""/>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-4 offset-md-2">
                 <h2 class="mb20">{new Data().data.projects[2].photo.caption}</h2>
-                    <p>{new Data().data.projects[2].description}</p>
+                    <p>{new Data().data.projects[2].description.slice(0,200)}.......[....]</p>
                     <div class="spacer-half"></div>
-                    <a href="#section-portfolio" class="btn-custom scroll-to">See Our Works</a>
+                    <a href="#section-portfolio" class="btn-custom scroll-to">Read more</a>
                 </div>
 
                 
@@ -179,15 +179,15 @@ export class AppProjects {
         <div class="container">
             <div class="row align-items-center">
 
-                <div class="col-md-6">
+                <div class="col-md-4 offset-md-2">
                     <h2 class="mb20">{new Data().data.projects[3].photo.caption}</h2>
-                    <p>{new Data().data.projects[3].description}</p>
+                    <p>{new Data().data.projects[3].description.slice(0,200)}.......[....]</p>
                     <div class="spacer-half"></div>
-                    <a href="#section-portfolio" class="btn-custom scroll-to">See Our Works</a>
+                    <a href="#section-portfolio" class="btn-custom scroll-to">Read more</a>
                 </div>
 
                 <div class="col-md-5 offset-md-1">
-                <img src={new Data().data.projects[3].photo.url} class="mb-sm-30 img-fluid" alt=""/>
+                <img id="space" src={new Data().data.projects[3].photo.url} class="mb-sm-30 img-fluid" alt=""/>
                 </div>
 
                 
@@ -207,19 +207,19 @@ export class AppProjects {
             <div class="row align-items-center">
 
                 <div class="col-md-5 offset-md-1">
-                <img src={new Data().data.projects[4].photo.url} class="mb-sm-30 img-fluid" alt=""/>
+                <img id= "space" src={new Data().data.projects[4].photo.url} class="mb-sm-30 img-fluid" alt=""/>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-4 offset-md-2">
                 <h2 class="mb20">{new Data().data.projects[4].photo.caption}</h2>
-                    <p>{new Data().data.projects[4].description}</p>
+                    <p>{new Data().data.projects[4].description.slice(0,200)}.......[....]</p>
                     <div class="spacer-half"></div>
-                    <a href="#section-portfolio" class="btn-custom scroll-to">See Our Works</a>
+                    <a href="#section-portfolio" class="btn-custom scroll-to">Read More</a>
                 </div>
 
                 
 
-                <div class="clearfix"></div>
+              
             </div>
 
 
@@ -242,23 +242,23 @@ export class AppProjects {
 
     {/* <!-- footer begin --> */}
     <footer>
-        <div class="container">
+    <div class="container">
             <div class="row">
                 <div class="col-md-6 sm-mb10">
-                    <div class="mt10">&copy; Copyright 2020 - Bolo by Designesia </div>
+                    <div class="mt10">&copy; Copyright 2021 - {new Data().data.slug} </div>
                 </div>
 
                 <div class="col-md-6 text-left text-md-right">
                     <div class="social-icons">
-                        <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                        <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                        <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
-                        <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                        <a href="#"><i class="fa fa-rss fa-lg"></i></a>
+                                 <a href={new Data().data.reachOut.facebook}><i class="fa fa-facebook fa-lg"></i></a>
+                                <a href={new Data().data.reachOut.twitter}><i class="fa fa-twitter fa-lg"></i></a>
+                                <a href={new Data().data.reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
+                                {/* <a href="#"><i class="fa fa-google-plus fa-lg"></i></a> */}
+                                {/* <a href="#"><i class="fa fa-rss fa-lg"></i></a> */}
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
 
     </footer>
     {/* <!-- footer close --> */}

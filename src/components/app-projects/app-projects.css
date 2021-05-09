@@ -63,3 +63,15 @@ opacity: 40%;
 {
   padding: 20px 10px;
 }
+
+#space
+{
+ 
+  margin: 40px 10px;
+  min-height: 250px;
+  min-width: 350px;
+  max-height: 300px;
+  max-width: 300px;
+  display: inline-block;
+}
+
