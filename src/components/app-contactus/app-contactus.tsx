@@ -49,6 +49,7 @@ export class AppContactus {
                        
                         <nav>
                             <ul id="mainmenu">
+                            <li><a href="about-us.html">Home</a></li>
                                   <li><a href="about-us.html">About Us</a></li>
                                  <li><a href="services.html">Projects</a></li>
                                 <li><a href="portfolio.html">Register</a></li>
