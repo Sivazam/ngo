@@ -84,10 +84,10 @@ export class AppReg {
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-md-10 mb-md-30">
-                            <form name="contactForm" id='contact_form' class="de_form" method="post" action='email.php'>
+                        <div class="col-md-6 mb-md-30">
+                            <form name="contactForm" id='contact_form' class="de_form" method="post" action=''>
                                 <div class="row">
-                                    <div class="col-md-10">
+                                    <div class="col-md-6">
                                         <div class="field-set">
                                             <input type='text' name='name' id='name' class="form-control" placeholder="Your Name"/>
                                             <div class="line-fx"></div>
@@ -110,16 +110,16 @@ export class AppReg {
                                         </div>
 
                                         <div class="field-set">
-                                            <input type='text' name='intrest' id='intrest' class="form-control" placeholder="Your Area of Intrest"/>
+                                            <input type='text' name='interest' id='interest' class="form-control" placeholder="Your Area of Interest"/>
                                             <div class="line-fx"></div>
                                         </div>
 
                                         </div>
-                                    </div>
-
+                                    
+                                    
                                    
 
-                                    <div class="col-md-8">
+                                    <div class="col-md-6">
                                         <div id='submit'>
                                             <input type='submit' id='send_message' value='Register' class="btn btn-custom color-2"/>
                                         </div>
@@ -128,10 +128,24 @@ export class AppReg {
                                     </div>
 
 
+                                    
+
+
+
+                                    </div>
+                                    
+                                    
+
+
                                 </div>
                             </form>
+                            
 
                         </div>
+                        <div class="col-6 mb-md-30">
+                                        
+                                        <img id= "resize"  src={new Data().data.projects[2].photo.url}/>
+                                        </div>
 
                         {/* <div class="col-md-4">
                             <h6 class="id-color">Call Us</h6>
