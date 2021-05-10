@@ -407,7 +407,7 @@ export class AppHome {
                                         <a href={new Data().data.team[0].reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
                                         <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
                                     </div> */}
-                                    <img src={new Data().data.team[0].photo.url} class="img-fluid" alt=""/>
+                                    <img id = "size" src={new Data().data.team[0].photo.url} class="img-fluid" alt=""/>
                                 </figure>
 
                                 <h3>{new Data().data.team[0].name}</h3>
@@ -424,7 +424,7 @@ export class AppHome {
                                         <a href={new Data().data.team[1].reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
                                         <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
                                     </div> */}
-                                    <img src={new Data().data.team[1].photo.url} class="img-fluid" alt=""/>
+                                    <img id = "size" src={new Data().data.team[1].photo.url} class="img-fluid" alt=""/>
                                 </figure>
 
                                 <h3>{new Data().data.team[1].name}</h3>
@@ -441,7 +441,7 @@ export class AppHome {
                                         <a href={new Data().data.team[2].reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
                                         <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
                                     </div> */}
-                                    <img src={new Data().data.team[2].photo.url} class="img-fluid" alt=""/>
+                                    <img id = "size" src={new Data().data.team[2].photo.url} class="img-fluid" alt=""/>
                                 </figure>
 
                                 <h3>{new Data().data.team[2].name}</h3>
@@ -458,7 +458,7 @@ export class AppHome {
                                         <a href={new Data().data.team[3].reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
                                         <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
                                     </div> */}
-                                    <img src={new Data().data.team[3].photo.url} class="img-fluid" alt=""/>
+                                    <img id = "size" src={new Data().data.team[3].photo.url} class="img-fluid" alt=""/>
                                 </figure>
 
                                 <h3>{new Data().data.team[3].name}</h3>

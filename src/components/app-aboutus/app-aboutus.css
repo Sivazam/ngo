@@ -142,8 +142,6 @@ opacity: 40%;
 
 #size
 {
-min-height: 380px;
-max-height: 380px;
-
- 
+min-height: 10rem;
+max-height: 15rem; 
 }

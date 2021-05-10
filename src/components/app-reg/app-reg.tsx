@@ -84,10 +84,10 @@ export class AppReg {
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-md-6 mb-md-30">
-                            <form name="contactForm" id='contact_form' class="de_form" method="post" action=''>
+                        <div class="col-md-8 mb-md-30">
+                            <form name="contactForm" id='contact_form' class="de_form" method="post" action='email.php'>
                                 <div class="row">
-                                    <div class="col-md-8">
+                                    <div class="col-md-6">
                                         <div class="field-set">
                                             <input type='text' name='name' id='name' class="form-control" placeholder="Your Name"/>
                                             <div class="line-fx"></div>
@@ -98,70 +98,77 @@ export class AppReg {
                                             <div class="line-fx"></div>
                                         </div>
 
-                                        
-
                                         <div class="field-set">
                                             <input type='text' name='phone' id='phone' class="form-control" placeholder="Your Phone"/>
                                             <div class="line-fx"></div>
-
-                                            <div class="field-set">
-                                            <input type='text' name='place' id='place' class="form-control" placeholder="Your Place"/>
+                                        </div>
+                                    
+                                        
+    
+                                    <div class="field-set">
+                                            <input type='text' name='Donation' id='phone' class="form-control" placeholder="place"/>
                                             <div class="line-fx"></div>
                                         </div>
-
+                               
+                                    <div class="field-set">
+                                            <input type='text' name='interest' id='interest' class="form-control" placeholder="Area of interest"/>
+                                            <div class="line-fx"></div>
+                                        </div>
                                         <div class="field-set">
-                                            <input type='text' name='interest' id='interest' class="form-control" placeholder="Your Area of Interest"/>
+                                            <textarea name='Address' id='Address' class="form-control" placeholder="Enter messeage if any"></textarea>
                                             <div class="line-fx"></div>
                                         </div>
-
-                                        </div>
-                                    
-                                    
-                                   
-
-                                    <div class="col-6 md-mb-30">
+                                        
                                         <div id='submit'>
-                                            <input type='submit' id='send_message' value='Register' class="btn btn-custom color-2"/>
+                                            <input type='submit' id='send_message' value='Regesiter' class="btn btn-custom color-2"/>
                                         </div>
+
                                         <div id='mail_success' class='success'>Your message has been sent successfully.</div>
                                         <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div>
                                     </div>
 
 
+                                    <div class="col-md-6 ">
+                                        
+                                    <img id= "resize"  src={new Data().data.projects[4].photo.url}/>
+                                    </div>
+
+                                   
+
                                     
 
-
-
-                                    </div>
+                                    
                                     
                                     
 
 
                                 </div>
                             </form>
-                            
 
                         </div>
-                        <div class="col-6 mb-md-30">
-                                        
-                                        <img id= "resize"  src={new Data().data.projects[2].photo.url}/>
-                                        </div>
 
-                        {/* <div class="col-md-4">
-                            <h6 class="id-color">Call Us</h6>
-                            {new Data().data.reachOut.phone1}
-                            <div class="spacer-single"></div>
-                            <h6 class="id-color">Address</h6>
-                            {new Data().data.address}
-                            <div class="spacer-single"></div>
-                            <h6 class="id-color">Email Us</h6>
-                            {new Data().data.reachOut.email}
-                        </div> */}
+                        
 
                     </div>
 
                 </div>
             </section>
+
+
+               {/* <div class="col-md-4">
+                            <h6 class="id-color">Call Us</h6>
+                            {new Data().data.reachOut.phone1}
+                            <div class="spacer-single"></div>
+                            <h6 class="id-color">Address</h6>
+                            {new Data().data.address}
+
+        <img id= "resize"  src={new Data().data.projects[2].photo.url}/>
+
+
+                            <div class="spacer-single"></div>
+                            <h6 class="id-color">Email Us</h6>
+                            {new Data().data.reachOut.email}
+                        </div> */}
             
 
         </div>
