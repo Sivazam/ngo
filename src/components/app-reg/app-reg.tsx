@@ -1,4 +1,4 @@
-import { Component,  h } from '@stencil/core';
+import { Component,Prop,  h } from '@stencil/core';
 import Data from "../data"
 
 
@@ -9,7 +9,12 @@ import Data from "../data"
 })
 export class AppReg {
 
-  render() {
+    @Prop()  name4: string;
+
+
+    render() {
+  
+   <p>{this.name4}</p>
     return (
       <div id="wrapper">
         <div class="page-overlay">
@@ -31,8 +36,10 @@ export class AppReg {
                        
                         <div id="logo">
                             <a href="index.html">
+                            <stencil-route-link url="/"  exact= {true}>
                             <img class="logo resize-1" src={new Data().data.review[13].ngo.logo.url} alt=""/>
-                        <img class="logo-2 resize-2" src={new Data().data.review[13].ngo.logo.url} alt=""/>
+                            <img class="logo-2 resize-2" src={new Data().data.review[13].ngo.logo.url} alt=""/>
+                        </stencil-route-link>
                             </a>
                         </div>
                         
@@ -43,14 +50,26 @@ export class AppReg {
 
                        
                         <nav>
-                            <ul id="mainmenu">
-                                <li><a href="index.html">Home</a></li>
-							                	<li><a href="">About Us</a></li>
-                                <li><a href="services.html">projects</a></li>
-                                <li><a href="portfolio.html">Register</a></li>
-                                <li><a href="blog.html">Donate</a></li>
-                                <li><a href="contact.html">Contact-Us</a></li>
-                            </ul>
+                        <ul id="mainmenu">
+                    <stencil-route-link url="/"  exact= {true}>
+                    <li><a >Home</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/aboutus"> 
+                    <li><a >About Us</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/projects">
+                    <li><a >Projects</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/register" exact={true}>
+                    <li><a >Register</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/donate">
+                    <li><a >Donate</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/contactus">
+                    <li><a>Conatct Us</a></li>
+                    </stencil-route-link>
+                    </ul>
                         </nav>
 					
 
@@ -130,7 +149,7 @@ export class AppReg {
 
                                     <div class="col-md-6 ">
                                         
-                                    <img id= "resize"  src={new Data().data.projects[4].photo.url}/>
+                                    <img id= "resizer"  src={new Data().data.projects[4].photo.url}/>
                                     </div>
 
                                    

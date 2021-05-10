@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component,Prop, h } from '@stencil/core';
 import Data from '../data';
 
 //  final customized homepage
@@ -6,12 +6,18 @@ import Data from '../data';
 
 @Component({
   tag: 'app-home',
-  styleUrl: 'app-home.css'
+  styleUrl: 'app-home.css',
   
 })
 
 export class AppHome {
+
+    @Prop()  method: string;
+
+
   render() {
+
+ <p>{this.method}</p>
    
     return (
 
@@ -38,8 +44,10 @@ export class AppHome {
                 <div id="logo">
                     <a href="section-home">
                         
-                        <img class="logo resize-1" src={new Data().data.review[13].ngo.logo.url} alt=""/>
-                        <img class="logo-2 resize-2" src={new Data().data.review[13].ngo.logo.url} alt=""/>
+                    <stencil-route-link url="/"  exact= {true}>
+                            <img class="logo resize-1" src={new Data().data.review[13].ngo.logo.url} alt=""/>
+                            <img class="logo-2 resize-2" src={new Data().data.review[13].ngo.logo.url} alt=""/>
+                        </stencil-route-link>
                     </a>
                 </div>
                 {/* logo end */}
@@ -49,13 +57,24 @@ export class AppHome {
                 
                 <nav>
                     <ul id="mainmenu">
-                    
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Register</a></li>
-                        <li><a href="#">Donate</a></li>
-                        <li><a href="#">Conatct Us</a></li>
+                    <stencil-route-link url="/"  exact= {true}>
+                    <li><a >Home</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/aboutus"> 
+                    <li><a >About Us</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/projects">
+                    <li><a >Projects</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/register" exact={true}>
+                    <li><a >Register</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/donate">
+                    <li><a >Donate</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/contactus">
+                    <li><a>Conatct Us</a></li>
+                    </stencil-route-link>
                     </ul>
                 </nav>
     
@@ -612,7 +631,13 @@ export class AppHome {
         </stencil-route-link>  */}
 
 
-{/* Router ends */}        
+{/* Router ends */}   
+
+
+
+
+
+
       
         </div>  
 </div>

@@ -1,18 +1,28 @@
-import { Component,  h } from '@stencil/core';
+import { Component,Prop,  h } from '@stencil/core';
+
 import Data from "../data";
 
 @Component({
   tag: 'app-aboutus',
-  styleUrl: 'app-aboutus.css',
+styleUrl: 'app-aboutus.css',
 
-  
+
 })
 export class AppAboutus {
 
+    @Prop()  name2: string;
+
+
   render() {
-      
+
+
+
+ 
+    
     return (
         <span>
+
+
         
             <div id="wrapper">
         
@@ -35,8 +45,10 @@ export class AppAboutus {
                         {/* <!-- logo begin --> */}
                         <div id="logo">
                             <a href="index.html">
+                            <stencil-route-link url="/"  exact= {true}>
                             <img class="logo resize-1" src={new Data().data.review[13].ngo.logo.url} alt=""/>
                             <img class="logo-2 resize-2" src={new Data().data.review[13].ngo.logo.url} alt=""/>
+                        </stencil-route-link>
                             </a>
                         </div>
                         {/* <!-- logo close --> */}
@@ -48,12 +60,27 @@ export class AppAboutus {
                         {/* <!-- mainmenu begin --> */}
                         <nav>
                             <ul id="mainmenu">
-                            <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Register</a></li>
-                        <li><a href="#">Donate</a></li>
-                        <li><a href="#">Conatct Us</a></li>
+
+                            
+                    <stencil-route-link url="/"  exact= {true}>
+                    <li><a >Home</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/aboutus"> 
+                    <li><a >About Us</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/projects">
+                    <li><a >Projects</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/register" exact={true}>
+                    <li><a >Register</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/donate">
+                    <li><a >Donate</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/contactus">
+                    <li><a>Conatct Us</a></li>
+                    </stencil-route-link>
+                    
                             </ul>
                         </nav>
                         {/* <!-- mainmenu close --> */}
@@ -283,26 +310,12 @@ export class AppAboutus {
         
         </div>
         
-        {/* <!-- Javascript Files
-        ================================================== --> */}
-        {/* <script src="assets/icon/js/jquery.min.js"></script>
-        <script src="assets/icon/js/bootstrap.min.js"></script>
-        <script src="assets/icon/js/jquery.isotope.min.js"></script>
-        <script src="assets/icon/js/easing.js"></script>
-        <script src="assets/icon/js/owl.carousel.js"></script>
-        <script src="assets/icon/js/jquery.countTo.js"></script>
-        <script src="assets/icon/js/wow.min.js"></script>
-        <script src="assets/icon/js/jquery.magnific-popup.min.js"></script>
-        <script src="assets/icon/js/enquire.min.js"></script>
-        <script src="assets/icon/js/jquery.stellar.min.js"></script>
-        <script src="assets/icon/js/jquery.plugin.js"></script>		
-        <script src="assets/icon/js/jquery.easeScroll.js"></script>
-        <script src="assets/icon/js/designesia.js"></script>
-        <script src="assets/icon/js/validation.js"></script> */}
+   
         
         </span>
 
     );
+    
   }
 
 }

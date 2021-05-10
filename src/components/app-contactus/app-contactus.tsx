@@ -1,4 +1,4 @@
-import { Component,  h } from '@stencil/core';
+import { Component,Prop,  h } from '@stencil/core';
 import Data from "../data"
 
 @Component({
@@ -8,13 +8,15 @@ import Data from "../data"
 })
 export class AppContactus {
 
-  render() {
+    @Prop()  name6: string;
+
+
+    render() {
+  
+   <p>{this.name6}</p>
     return (
 
       <div id="wrapper">
-
-
-
 
 
         <div class="page-overlay">
@@ -36,8 +38,11 @@ export class AppContactus {
                        
                         <div id="logo">
                             <a href="index.html">
+                        <stencil-route-link url="/"  exact= {true}>
                             <img class="logo resize-1" src={new Data().data.review[13].ngo.logo.url} alt=""/>
-                            <img class="logo-2 resize-2" src={new Data().data.review[13].ngo.logo.url} alt=""/> 
+                            <img class="logo-2 resize-2" src={new Data().data.review[13].ngo.logo.url} alt=""/>
+                        </stencil-route-link>
+                            
                             </a>
                         </div>
                         
@@ -48,14 +53,26 @@ export class AppContactus {
 
                        
                         <nav>
-                            <ul id="mainmenu">
-                            <li><a href="about-us.html">Home</a></li>
-                                  <li><a href="about-us.html">About Us</a></li>
-                                 <li><a href="services.html">Projects</a></li>
-                                <li><a href="portfolio.html">Register</a></li>
-                                 <li><a href="blog.html">Donate</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                            </ul>
+                        <ul id="mainmenu">
+                    <stencil-route-link url="/"  exact= {true}>
+                    <li><a >Home</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/aboutus"> 
+                    <li><a >About Us</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/projects">
+                    <li><a >Projects</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/register" exact={true}>
+                    <li><a >Register</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/donate">
+                    <li><a >Donate</a></li>
+                    </stencil-route-link>
+                    <stencil-route-link url="/contactus">
+                    <li><a>Conatct Us</a></li>
+                    </stencil-route-link>
+                    </ul>
                         </nav>
 					
 
