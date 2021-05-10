@@ -186,7 +186,7 @@ export class AppAboutus {
                                         <a href={new Data().data.team[0].reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
                                         <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
                                     </div> */}
-                                    <img  id = "size" src={new Data().data.team[0].photo.url} class="img-fluid" alt=""/>
+                                    <img  id ="size" src={new Data().data.team[0].photo.url} class="img-fluid" alt=""/>
                                 </figure>
         
                                 <h3>{new Data().data.team[0].name}</h3>
@@ -203,7 +203,7 @@ export class AppAboutus {
                                         <a href={new Data().data.team[1].reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
                                         <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
                                     </div> */}
-                                    <img src={new Data().data.team[1].photo.url} class="img-fluid" alt=""/>
+                                    <img  id ="size" src={new Data().data.team[1].photo.url} class="img-fluid" alt=""/>
                                 </figure>
         
                                 <h3>{new Data().data.team[1].name}</h3>
@@ -220,11 +220,11 @@ export class AppAboutus {
                                         <a href={new Data().data.team[2].reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
                                         <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
                                     </div> */}
-                                    <img src={new Data().data.team[2].photo.url} class="img-fluid" alt=""/>
+                                     <img  id ="size" src={new Data().data.team[3].photo.url} class="img-fluid" alt=""/>
                                 </figure>
         
-                                <h3>{new Data().data.team[2].name}</h3>
-                                <span class="subtitle">{new Data().data.team[2].role}</span>
+                                <h3>{new Data().data.team[3].name}</h3>
+                                <span class="subtitle">{new Data().data.team[3].role}</span>
                             </div>
                         </div>
         
@@ -237,11 +237,11 @@ export class AppAboutus {
                                     <a href={new Data().data.team[3].reachOut.linkedin}><i class="fa fa-linkedin fa-lg"></i></a>
                                         <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
                                     </div> */}
-                                    <img src={new Data().data.team[3].photo.url} class="img-fluid" alt=""/>
+                                    <img id ="size" src={new Data().data.team[4].photo.url} class="img-fluid" alt=""/>
                                 </figure>
         
-                                <h3>{new Data().data.team[3].name}</h3>
-                                <span class="subtitle">{new Data().data.team[3].role}</span>
+                                <h3>{new Data().data.team[4].name}</h3>
+                                <span class="subtitle">{new Data().data.team[4].role}</span>
                             </div>
                         </div>
                     </div>
