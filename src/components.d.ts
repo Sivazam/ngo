@@ -8,7 +8,6 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { MatchResults } from "@stencil/router";
 export namespace Components {
     interface AppAboutus {
-        "name2": string;
     }
     interface AppBlog {
     }
@@ -19,7 +18,6 @@ export namespace Components {
         "name5": string;
     }
     interface AppHome {
-        "method": string;
     }
     interface AppIndex {
     }
@@ -138,7 +136,6 @@ declare global {
 }
 declare namespace LocalJSX {
     interface AppAboutus {
-        "name2"?: string;
     }
     interface AppBlog {
     }
@@ -149,7 +146,6 @@ declare namespace LocalJSX {
         "name5"?: string;
     }
     interface AppHome {
-        "method"?: string;
     }
     interface AppIndex {
     }

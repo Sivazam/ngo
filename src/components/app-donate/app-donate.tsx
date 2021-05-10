@@ -49,24 +49,36 @@ export class Doante {
                 
                 <nav>
                 <ul id="mainmenu">
+                    <li>
                     <stencil-route-link url="/"  exact= {true}>
-                    <li><a >Home</a></li>
+                    <a >Home</a>
                     </stencil-route-link>
+                    </li>
+                    <li>
                     <stencil-route-link url="/aboutus"> 
-                    <li><a >About Us</a></li>
+                    <a >About Us</a>
                     </stencil-route-link>
+                    </li>
+                    <li>
                     <stencil-route-link url="/projects">
-                    <li><a >Projects</a></li>
+                    <a >Projects</a>
                     </stencil-route-link>
+                    </li>
+                    <li>
                     <stencil-route-link url="/register" exact={true}>
-                    <li><a >Register</a></li>
+                    <a >Register</a>
                     </stencil-route-link>
+                    </li>
+                    <li>
                     <stencil-route-link url="/donate">
-                    <li><a >Donate</a></li>
+                    <a >Donate</a>
                     </stencil-route-link>
+                    </li>
+                    <li>
                     <stencil-route-link url="/contactus">
-                    <li><a>Conatct Us</a></li>
+                    <a>Conatct Us</a>
                     </stencil-route-link>
+                    </li>
                     </ul>
                 </nav>
     
