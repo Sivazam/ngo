@@ -102,28 +102,22 @@ export class Doante {
                                             <input type='text' name='phone' id='phone' class="form-control" placeholder="Your Phone"/>
                                             <div class="line-fx"></div>
                                         </div>
-                                    </div>
-
-                                    <div class="col-md-7 ">
+                                    
                                         <div class="field-set">
                                             <textarea name='Address' id='Address' class="form-control" placeholder="Your Address"></textarea>
                                             <div class="line-fx"></div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-7 ">
+                                   
                                     <div class="field-set">
                                             <input type='text' name='Donation' id='phone' class="form-control" placeholder="Donation in rupees"/>
                                             <div class="line-fx"></div>
                                         </div>
-                                        </div>
-                                        <div class="col-md-7 ">
+                               
                                     <div class="field-set">
                                             <input type='text' name='Towards' id='towards' class="form-control" placeholder="Donation Towards"/>
                                             <div class="line-fx"></div>
                                         </div>
-                                        </div>
-
-                                    <div class="col-md-6">
+                                        
                                         <div id='submit'>
                                             <input type='submit' id='send_message' value='Donate' class="btn btn-custom color-2"/>
                                         </div>
@@ -131,6 +125,19 @@ export class Doante {
                                         <div id='mail_success' class='success'>Your message has been sent successfully.</div>
                                         <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div>
                                     </div>
+
+
+                                    <div class="col-md-6 ">
+                                        
+                                    <img id= "resize"  src={new Data().data.projects[2].photo.url}/>
+                                    </div>
+
+                                   
+
+                                    
+
+                                    
+                                    
                                     
 
 
