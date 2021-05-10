@@ -87,7 +87,7 @@ export class AppReg {
                         <div class="col-md-6 mb-md-30">
                             <form name="contactForm" id='contact_form' class="de_form" method="post" action=''>
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-8">
                                         <div class="field-set">
                                             <input type='text' name='name' id='name' class="form-control" placeholder="Your Name"/>
                                             <div class="line-fx"></div>
@@ -119,7 +119,7 @@ export class AppReg {
                                     
                                    
 
-                                    <div class="col-md-6">
+                                    <div class="col-6 md-mb-30">
                                         <div id='submit'>
                                             <input type='submit' id='send_message' value='Register' class="btn btn-custom color-2"/>
                                         </div>
